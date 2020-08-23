@@ -18,3 +18,6 @@ phases:
 artifacts:
   files:
     - target/*
+reports:
+  files:
+    - target/*
