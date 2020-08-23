@@ -12,7 +12,7 @@ phases:
       - mvn package
   post_build:
     commands:
-      - echo " <!DOCTYPE html> <html> <body> <h1>My First Heading</h1> <p>My first paragraph.</p> </body> </html> ">>email.html
+      - echo " Test ">>email.html
 artifacts:
   files:
     - email.html
