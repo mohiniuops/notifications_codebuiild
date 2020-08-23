@@ -8,10 +8,13 @@ phases:
       - echo Nothing to do in pre_build phase
   build:
     commands:
-      - echo "email">email.html
+      - mkdir target
+      - touch target/email.html
+      - chmod 755 email.html
+      - echo "hello">>target/email.html
   post_build:
     commands:
       - echo " Bye Bye"
 artifacts:
   files:
-    - email.html
+    - target/*
