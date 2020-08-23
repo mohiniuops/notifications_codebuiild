@@ -13,7 +13,7 @@ phases:
       - echo $SMTP_PASS is SMTP_PASS
       - echo $SMTP_ACCESS is SMTP_ACCESS
       - chmod 755 target/email.html
-      - echo "hello">>target/email.html
+      - cat template.html>>target/email.html
   post_build:
     commands:
       - echo " Bye Bye"
