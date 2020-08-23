@@ -19,5 +19,6 @@ artifacts:
   files:
     - target/*
 reports:
-  files:
-    - target/*
+  Notification:
+    files:
+      - target/*
