@@ -1,7 +1,8 @@
 version: 0.2
 phases:
   install:
-    python -V
+    commands:
+      python -V
   pre_build:
     commands:
       - echo To Pull email template file 
