@@ -18,7 +18,7 @@ phases:
   post_build:
     commands:
       - echo "Sending mail"
-      - python3 sendemail.py
+      - python sendemail.py
 artifacts:
   files:
     - target/*
