@@ -2,10 +2,11 @@ version: 0.2
 phases:
   install:
     runtime-versions:
-      java: openjdk11
+      python: 3.7 
   pre_build:
     commands:
-      - echo Nothing to do in pre_build phase
+      - echo To Pull email template file 
+      - ls 
   build:
     commands:
       - mkdir target
@@ -16,7 +17,8 @@ phases:
       - cat template.html>>target/email.html
   post_build:
     commands:
-      - echo " Bye Bye"
+      - echo "Sending mail"
+      - python3 sendemail.py
 artifacts:
   files:
     - target/*
