@@ -8,11 +8,10 @@ phases:
       - echo Nothing to do in pre_build phase
   build:
     commands:
-      - java -version
-      - mvn package
+      - echo "email">email.html
   post_build:
     commands:
-      - echo " Test ">>email.html
+      - echo " Bye Bye"
 artifacts:
   files:
     - email.html
