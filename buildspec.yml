@@ -18,7 +18,7 @@ phases:
   post_build:
     commands:
       - echo "Sending mail"
-      - python sendmail.py
+      - echo Will run Lambda function python sendmail.py
 artifacts:
   files:
     - target/*
