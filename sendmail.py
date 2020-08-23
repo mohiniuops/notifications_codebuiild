@@ -9,6 +9,7 @@ s3.download_file('email-reports-bucket', 'NotificationOPS/target/email.html', 'e
 html = open("email.html")
 msg = MIMEText(html.read(), 'html')
 text = msg.as_string()
+s = smtplib.SMTP('email-smtp.us-west-2.amazonaws.com')
 
 
 
