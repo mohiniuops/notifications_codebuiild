@@ -10,7 +10,7 @@ html = open("email.html")
 msg = MIMEText(html.read(), 'html')
 text = msg.as_string()
 
-s = smtplib.SMTP()
+s = smtplib.SMTP('email-smtp.us-west-2.amazonaws.com')
 s.connect('email-smtp.us-west-2.amazonaws.com',587)
 s.starttls()
 s.login(os.environ(SMTP_ACCESS),os.environ(SMTP_PASS))
