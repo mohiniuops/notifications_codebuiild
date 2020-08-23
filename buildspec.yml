@@ -16,7 +16,7 @@ phases:
   post_build:
     commands:
       - echo "Sending mail"
-      - python ./sendmail.py
+      - echo "Skipping python ./sendmail.py"
 artifacts:
   files:
     - target/email.html
