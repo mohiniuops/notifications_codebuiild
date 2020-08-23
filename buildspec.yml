@@ -10,7 +10,7 @@ phases:
     commands:
       - mkdir target
       - touch target/email.html
-      - chmod 755 email.html
+      - chmod 755 target/email.html
       - echo "hello">>target/email.html
   post_build:
     commands:
